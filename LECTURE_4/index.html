@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+</head>
+<body>
+
+<!-- Example 1 -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>37115</td>
+            <td>Sachin Patel</td>
+            <td>Male</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>37119</td>
+            <td>Sumit Patel</td>
+            <td>Male</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>1234</td>
+            <td>Sunny Patel</td>
+            <td>Male</td>
+            <td rowspan="3">17</td>
+        </tr>
+        <tr>
+            <td>71019</td>
+            <td>Amit Patel</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>70619</td>
+            <td>Rakesh Raj</td>
+            <td>Male</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<!-- Example 2 -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2 Cell 1</td>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<!-- Example 3 -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+            <td rowspan="4">Company Founder</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sachin Patel</td>
+            <td>CEO Amazon</td>
+            <td>$2000</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total Expense</td>
+            <td>$3000</td>
+        </tr>
+    </tfoot>
+</table>
+
+<br>
+
+<!-- Example 5 -->
+<table border="1">
+    <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="3">Seminar</th>
+    </tr>
+    <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+    </tr>
+    <tr>
+        <th>Begin</th>
+        <th>End</th>
+    </tr>
+</table>
+
+</body>
+</html>
