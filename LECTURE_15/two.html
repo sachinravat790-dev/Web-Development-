@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner{
+            background-color: antiquewhite;
+            padding:2px;
+            margin: 2px;
+            border: 2px solid black;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            /* width: 400px;
+            height: 400px; */
+            justify-content: center;
+            /* flex-wrap:wrap ; */
+
+        }
+        .para1{
+            height: 30px;
+            width: 98px;
+            padding:2px;
+            margin:4px;
+            background-color: chartreuse;
+            border:2px solid black;
+            text-align: center;
+            justify-content: right;
+            display:flex;
+            flex-direction: column;
+        }
+        .para2{
+            height: 30px;
+            width: 98px;
+            padding:2px;
+            margin:4px;
+            background-color: pink;
+            border:2px solid black;
+            text-align: center;
+            
+        }
+        img{
+            height: 200px;
+            width: 190px;
+           display:flex;
+           justify-content:end;
+            
+        }
+        @media(max-width:640px){
+            .conatiner{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div>
+            <p class="para1">text1</p>
+            <p class="para2">text2</p>
+        </div>
+   
+        <div>
+           <img src="my image.jpeg"/>
+        </div>
+   </div>
+        
+</body>
+</html>
