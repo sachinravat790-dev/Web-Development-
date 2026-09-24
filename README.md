@@ -412,7 +412,9 @@ const
 ```
 
 
-================== DATA_TYPE =================
+====================================================================================================
+-------------------------------------------DATA TYPE---------------------------------------------
+====================================================================================================
 
 
 # 📦 Data Type in JavaScript
@@ -594,8 +596,409 @@ Non-Primitive
 └── Object     → { name: "Sachin" }
 ```
 
-### 🎯 Interview Definition
-
-> **A data type defines the type of value that a variable can store. JavaScript has primitive data types such as String, Number, Boolean, Undefined, Null, BigInt, and Symbol, and reference types such as Objects.**
 
 
+====================================================================================================
+--------------------------------------OPERATOR------------------------------------------------------
+====================================================================================================
+
+
+# ⚙️ Operator in JavaScript
+
+## Definition
+
+> **An operator is a symbol or keyword used to perform an operation on values or variables.**
+
+### Hinglish
+
+> **Operator ek symbol ya keyword hota hai jo values ya variables par koi operation perform karta hai.**
+
+### Example
+
+```javascript
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+```
+
+Yahan `+` **operator** hai jo `10` aur `5` ko add karta hai.
+
+---
+
+# 🔥 Types of Operators
+
+JavaScript me mainly ye operators important hain:
+
+```text
+Operators
+│
+├── 1. Arithmetic
+├── 2. Assignment
+├── 3. Comparison
+├── 4. Logical
+├── 5. Increment / Decrement
+├── 6. Ternary
+├── 7. Bitwise
+└── 8. String
+```
+
+---
+
+# 1️⃣ Arithmetic Operators
+
+Mathematical calculation ke liye.
+
+| Operator | Meaning        | Example  | Result |
+| -------- | -------------- | -------- | ------ |
+| `+`      | Addition       | `10 + 5` | `15`   |
+| `-`      | Subtraction    | `10 - 5` | `5`    |
+| `*`      | Multiplication | `10 * 5` | `50`   |
+| `/`      | Division       | `10 / 5` | `2`    |
+| `%`      | Remainder      | `10 % 3` | `1`    |
+| `**`     | Power          | `2 ** 3` | `8`    |
+
+### Example
+
+```javascript
+let a = 10;
+let b = 3;
+
+console.log(a + b); // 13
+console.log(a % b); // 1
+```
+
+---
+
+# 2️⃣ Assignment Operators
+
+Variable me value **assign/update** karne ke liye.
+
+```javascript
+let x = 10;
+
+x += 5;  // x = x + 5
+x -= 2;  // x = x - 2
+x *= 2;  // x = x * 2
+x /= 2;  // x = x / 2
+```
+
+Example:
+
+```javascript
+let x = 10;
+
+x += 5;
+
+console.log(x);
+```
+
+Output:
+
+```text
+15
+```
+
+---
+
+# 3️⃣ Comparison Operators
+
+Do values ko **compare** karne ke liye.
+
+| Operator | Meaning                 |
+| -------- | ----------------------- |
+| `==`     | Equal value             |
+| `===`    | Equal value + same type |
+| `!=`     | Not equal               |
+| `!==`    | Not equal value/type    |
+| `>`      | Greater than            |
+| `<`      | Less than               |
+| `>=`     | Greater than or equal   |
+| `<=`     | Less than or equal      |
+
+### Example
+
+```javascript
+let a = 10;
+let b = 20;
+
+console.log(a < b);
+```
+
+Output:
+
+```text
+true
+```
+
+### Important: `==` vs `===`
+
+```javascript
+console.log(5 == "5");   // true
+console.log(5 === "5");  // false
+```
+
+`==` → sirf value compare karta hai.
+`===` → **value + data type** dono compare karta hai.
+
+👉 Modern JavaScript me generally **`===` prefer** karo.
+
+---
+
+# 4️⃣ Logical Operators
+
+Conditions ko combine karne ke liye.
+
+### `&&` AND
+
+Dono conditions true honi chahiye.
+
+```javascript
+let age = 20;
+
+console.log(age >= 18 && age <= 25);
+```
+
+Output:
+
+```text
+true
+```
+
+### `||` OR
+
+Kam se kam ek condition true honi chahiye.
+
+```javascript
+let age = 16;
+
+console.log(age >= 18 || age == 16);
+```
+
+Output:
+
+```text
+true
+```
+
+### `!` NOT
+
+True ko false aur false ko true karta hai.
+
+```javascript
+let isStudent = true;
+
+console.log(!isStudent);
+```
+
+Output:
+
+```text
+false
+```
+
+---
+
+# 5️⃣ Increment / Decrement
+
+Value ko `1` se badhane ya ghataane ke liye.
+
+### Increment `++`
+
+```javascript
+let x = 10;
+
+x++;
+
+console.log(x);
+```
+
+Output:
+
+```text
+11
+```
+
+### Decrement `--`
+
+```javascript
+let x = 10;
+
+x--;
+
+console.log(x);
+```
+
+Output:
+
+```text
+9
+```
+
+---
+
+# 6️⃣ Ternary Operator `? :`
+
+Short **if-else** ke liye use hota hai.
+
+```javascript
+let age = 20;
+
+let result = age >= 18 ? "Adult" : "Minor";
+
+console.log(result);
+```
+
+Output:
+
+```text
+Adult
+```
+
+Samjho:
+
+```text
+condition ? true-value : false-value
+```
+
+---
+
+# 7️⃣ Bitwise Operators
+
+Numbers ke **binary bits** par operation karte hain.
+
+Important:
+
+```text
+&   AND
+|   OR
+^   XOR
+~   NOT
+<<  Left Shift
+>>  Right Shift
+```
+
+Example:
+
+```javascript
+console.log(5 & 3);
+```
+
+Binary:
+
+```text
+5 = 101
+3 = 011
+    ---
+    001 = 1
+```
+
+Output:
+
+```text
+1
+```
+
+---
+
+# 8️⃣ String Operator
+
+`+` ka use strings ko **join/concatenate** karne ke liye bhi hota hai.
+
+```javascript
+let firstName = "Sachin";
+let lastName = "Kumar";
+
+let fullName = firstName + " " + lastName;
+
+console.log(fullName);
+```
+
+Output:
+
+```text
+Sachin Kumar
+```
+
+---
+
+# 🧠 Ekdum Easy Revision
+
+```text
++ - * / % **     → Arithmetic
+= += -= *= /=    → Assignment
+== === != !==    → Comparison
+&& || !          → Logical
+++ --            → Increment/Decrement
+? :              → Ternary
+& | ^ ~ << >>    → Bitwise
++                → String Concatenation
+```
+
+
+========================================================================================================================================================================================
+
+## 📘 Boolean and Non-Boolean
+
+### 1. Boolean
+
+A **Boolean** is a data type that has only **two values**:
+
+* `true`
+* `false`
+
+**Example:**
+
+```javascript
+let isStudent = true;
+let isPassed = false;
+```
+
+**Use:** Boolean values are mainly used for **conditions and decision-making**.
+
+---
+
+### 2. Non-Boolean
+
+A **Non-Boolean** means any value that is **not `true` or `false`**.
+
+Common non-Boolean data types:
+
+| Data Type | Example            |
+| --------- | ------------------ |
+| Number    | `10`, `25.5`       |
+| String    | `"Sachin"`         |
+| Array     | `[1, 2, 3]`        |
+| Object    | `{name: "Sachin"}` |
+| Null      | `null`             |
+| Undefined | `undefined`        |
+
+**Example:**
+
+```javascript
+let age = 20;          // Number → Non-Boolean
+let name = "Sachin";   // String → Non-Boolean
+let marks = [80, 90];  // Array → Non-Boolean
+```
+
+### 🔑 Easy Difference
+
+**Boolean →** `true` / `false`
+**Non-Boolean →** Everything that is not directly `true` or `false`.
+
+### ⭐ Important: Truthy and Falsy
+
+In JavaScript, some **non-Boolean values can behave like Boolean values** when used in a condition.
+
+```javascript
+if ("Sachin") {
+    console.log("Hello");
+}
+```
+
+Here `"Sachin"` is a **String (non-Boolean)**, but JavaScript treats it as **truthy**.
+
+So remember:
+
+> **Boolean = actual `true` or `false`**
+> **Non-Boolean = other types of values, which may be treated as truthy or falsy in conditions.**
